@@ -1,0 +1,180 @@
+body {
+  background: linear-gradient(to bottom right, #0080ff, #ed455e);
+  background-repeat: no-repeat;
+}
+.App {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.Todo_container {
+  border: 1px #cccccc solid;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 500px;
+  margin: 25px auto;
+  background: white;
+  min-height: 647px;
+}
+
+.Todo_title {
+  color: #ed455e;
+}
+
+.Todo_addContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Todo_addButton {
+  border: 0;
+  border-radius: 50%;
+  outline: 0;
+  padding: 13px 19px;
+  background-color: #ed455e;
+  color: white;
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+.Todo_addButton:hover {
+  background-color: #0080ff;
+}
+
+.Todo_addInputContainer {
+  flex: 1;
+}
+
+.Todo_addInput {
+  height: 100%;
+  width: 300px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.Todo_listContainer {
+  margin: 10px 0;
+}
+
+.Todo_listItem {
+  display: flex;
+  align-items: center;
+  border-top: 1px #cccccc solid;
+  padding-top: 10px;
+}
+.Todo_listDelete {
+  border: 0;
+  border-radius: 50%;
+  outline: 0;
+  background-color: #ed455e;
+  color: white;
+  padding: 10px 14px;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.Todo_listDelete:hover {
+  background-color: black;
+}
+.Todo_listCheckbox {
+  margin-right: 15px;
+}
+.Todo_listName {
+  flex: 1;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+.Todo_dueTo {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.Todo_filterTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+.Todo_totalTasks {
+  font-size: 20px;
+}
+.Todo_filterContainer {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Todo_filterButton {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  margin: 5px 5px 30px 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: 1s;
+  background: #0080ff;
+}
+.Todo_filterButton:hover {
+  background: #ed455e;
+}
+.Todo_toggleButton {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  margin: 20px 5px 5px 0;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: black;
+  transition: 1s;
+}
+.Todo_toggleButton:hover {
+  background-color: #cccccc;
+  border: 1px black solid;
+  color: black;
+}
+.Todo_edit {
+  margin-top: 15px;
+}
+.Todo_editInput {
+  padding: 5px;
+}
+.Todo_editButton {
+  margin-left: 10px;
+  padding: 8px 10px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  background: #0080ff;
+  cursor: pointer;
+  transition: 1s;
+}
+.Todo_editButton:hover {
+  background: black;
+}
+
+@media screen and (max-width: 500px) {
+  .Todo_container {
+    width: 100%;
+  }
+  .Todo_addInput {
+    width: 80%;
+  }
+  .Todo_listName {
+    width: auto;
+  }
+  .Todo_filterContainer {
+    width: 100%;
+  }
+}
